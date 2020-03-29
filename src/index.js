@@ -1,17 +1,66 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import SeasonDisplay from './SeasonDisplay';
+import Loading from './Loading';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+class App extends React.Component{
+  // constructor(props){
+  //   super(props);
+  //   this.state={ lat: null, errorMessage: '' };
+  // }
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  state = {lat:null, errorMessage: ''};
+
+  // componentDidMount(){
+  //   console.log("My component was rendered to the screen");
+  // }
+  //
+  // componentDidUpdate(){
+  //   console.log("My component was just updated - it rerendered");
+  // }
+
+  componentDidMount(){
+    window.navigator.geolocation.getCurrentPosition(
+      (position) => {
+        this.setState({ lat : position.coords.latitude });
+      },
+      (err) => {
+        this.setState({ errorMessage: err.message });
+      }
+    );
+  }
+
+  //USER-DEFINED HELPER FUNCTION. LETS NAME IT RENDERCONTENT
+  renderContent(){
+    if(this.state.errorMessage && !this.state.lat){
+      return <div>Error: {this.state.errorMessage}</div>
+    }
+    if(!this.state.errorMessage && this.state.lat){
+      return <SeasonDisplay lat={this.state.lat} />
+    }
+    return <Loading message="Please accept location request!"/>
+  }
+
+  render() {
+    return <div className="border red">{this.renderContent()}</div>
+  }
+
+  // render(){
+  //   if(this.state.errorMessage && !this.state.lat){
+  //     return <div clasName="border red">
+  //             <div>Error: {this.state.errorMessage}</div>
+  //           </div>
+  //   }
+  //   if(!this.state.errorMessage && this.state.lat){
+  //     return <div clasName="border red">
+  //             <div><SeasonDisplay lat={this.state.lat} /></div>
+  //           </div>
+  //   }
+  //   return <div clasName="border Red">
+  //           <Loading message="Please accept location request!"/>
+  //          </div>
+  // }
+  
+}
+
+ReactDOM.render(<App />, document.querySelector("#root"));
