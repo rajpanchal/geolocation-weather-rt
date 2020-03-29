@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/rajpanchal.github.io/Weather-GeoLocation-React/static/css/main.fa84f80a.chunk.css",
-    "main.js": "/rajpanchal.github.io/Weather-GeoLocation-React/static/js/main.0f1df756.chunk.js",
-    "main.js.map": "/rajpanchal.github.io/Weather-GeoLocation-React/static/js/main.0f1df756.chunk.js.map",
-    "runtime-main.js": "/rajpanchal.github.io/Weather-GeoLocation-React/static/js/runtime-main.102789e8.js",
-    "runtime-main.js.map": "/rajpanchal.github.io/Weather-GeoLocation-React/static/js/runtime-main.102789e8.js.map",
-    "static/js/2.c6d29b69.chunk.js": "/rajpanchal.github.io/Weather-GeoLocation-React/static/js/2.c6d29b69.chunk.js",
-    "static/js/2.c6d29b69.chunk.js.map": "/rajpanchal.github.io/Weather-GeoLocation-React/static/js/2.c6d29b69.chunk.js.map",
-    "index.html": "/rajpanchal.github.io/Weather-GeoLocation-React/index.html",
-    "precache-manifest.03d09a629e18803f15c97bc733bef3a2.js": "/rajpanchal.github.io/Weather-GeoLocation-React/precache-manifest.03d09a629e18803f15c97bc733bef3a2.js",
-    "service-worker.js": "/rajpanchal.github.io/Weather-GeoLocation-React/service-worker.js",
-    "static/css/main.fa84f80a.chunk.css.map": "/rajpanchal.github.io/Weather-GeoLocation-React/static/css/main.fa84f80a.chunk.css.map",
-    "static/js/2.c6d29b69.chunk.js.LICENSE.txt": "/rajpanchal.github.io/Weather-GeoLocation-React/static/js/2.c6d29b69.chunk.js.LICENSE.txt"
+    "main.css": "/Weather-GeoLocation-React/static/css/main.fa84f80a.chunk.css",
+    "main.js": "/Weather-GeoLocation-React/static/js/main.0f1df756.chunk.js",
+    "main.js.map": "/Weather-GeoLocation-React/static/js/main.0f1df756.chunk.js.map",
+    "runtime-main.js": "/Weather-GeoLocation-React/static/js/runtime-main.98697b1f.js",
+    "runtime-main.js.map": "/Weather-GeoLocation-React/static/js/runtime-main.98697b1f.js.map",
+    "static/js/2.c6d29b69.chunk.js": "/Weather-GeoLocation-React/static/js/2.c6d29b69.chunk.js",
+    "static/js/2.c6d29b69.chunk.js.map": "/Weather-GeoLocation-React/static/js/2.c6d29b69.chunk.js.map",
+    "index.html": "/Weather-GeoLocation-React/index.html",
+    "precache-manifest.8bfbbb9db33f78f87196ecbbb138417e.js": "/Weather-GeoLocation-React/precache-manifest.8bfbbb9db33f78f87196ecbbb138417e.js",
+    "service-worker.js": "/Weather-GeoLocation-React/service-worker.js",
+    "static/css/main.fa84f80a.chunk.css.map": "/Weather-GeoLocation-React/static/css/main.fa84f80a.chunk.css.map",
+    "static/js/2.c6d29b69.chunk.js.LICENSE.txt": "/Weather-GeoLocation-React/static/js/2.c6d29b69.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.102789e8.js",
+    "static/js/runtime-main.98697b1f.js",
     "static/js/2.c6d29b69.chunk.js",
     "static/css/main.fa84f80a.chunk.css",
     "static/js/main.0f1df756.chunk.js"
